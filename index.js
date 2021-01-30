@@ -41,7 +41,7 @@ prefix = '.'
 blocked = []   
 limitawal = 25
 memberlimit = 2000
-cr = '*【☆MYTH】 BOT INI SUDAH TERVERIFIKASI*'
+cr = '*【MYTH BOT】 BOT INI SUDAH TERVERIFIKASI ✅*'
 
 /******** OWNER NUMBER**********/
 const ownerNumber = ["447451207704@s.whatsapp.net"] 

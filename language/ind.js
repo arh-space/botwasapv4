@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「 BELUM DAFTAR 」*\n\n*Hai kak! Maaf Kamu belum terdaftar sebagai User MYTH Bot :(\n\nSilahkan daftar terlebih dahulu ya :)\n\nCara daftar :  ${prefix}daftar Nama | Umur* \n*Contoh : ${prefix}daftar Rawrrr | 17*`
+	return`*「 BELUM DAFTAR 」*\n\nHai kak! Maaf Kamu belum terdaftar sebagai User MYTH Bot :(\n\nSilahkan daftar terlebih dahulu ya :)\n\nCara daftar :  ${prefix}daftar Nama | Umur \nContoh : ${prefix}daftar Rawrrr | 17`
 }
 
 exports.rediregis = () => {
@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (namaUser, umurUser, serialUser, time, sender) => {
-	return`*「 DATA USER 」*\n\nHai kak! Selamat kamu sudah berhasil mendaftar sebagai user MYTH Bot dengan data berikut: \n\n┏━⊱Nama\n┗⊱${namaUser}\n┏━⊱Nomor\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱Umur\n┗⊱${umurUser}\n┏━⊱Waktu Pendaftaran\n┗⊱${time}\n\n┏━❉ *Nomor Serial* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : Save Nomor Serial ini`
+	return`*「 DATA PENDAFTARAN USER 」*\n\nHai kak! Selamat Kamu berhasil mendaftar sebagai user MYTH Bot dengan data berikut: \n\nNama : ${namaUser}\nNomor : wa.me/${sender.split("@")[0]}\nUmur : ${umurUser}\nWaktu Pendaftaran : ${time}\n\n❉ *Nomor Serial* ❉\n⊱${serialUser}\n\nNOTE : Save Nomor Serial ini`
 }
 
 exports.cmdnf = (prefix, command) => {
@@ -122,11 +122,11 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *Wallet* : Rp${uangku}
 ┣⊱ *XP* : ${getLevelingXp(sender)}/${reqXp}
 ┣⊱ *Level* : ${getLevelingLevel(sender)}
-┣⊱ *User register* : ${_registered.length}
+┣⊱ *Total User* : ${_registered.length}
 ┗━━━⊱  ⸨ *MYTH* ⸩  ⊰━━━━┛
 
 
-┏━━⊱ *MAKER MENU* ⊰━━┓
+┏━━⊱ *MAKER MENU* 
 ┣⊱ *${prefix}sticker*
 ┣⊱ *${prefix}avengers*
 ┣⊱ *${prefix}summer*
@@ -139,9 +139,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}blood*
 ┣⊱ *${prefix}firework*
 ┣⊱ *${prefix}lava*
-┣⊱ *${prefix}qrcode*
+┗⊱ *${prefix}qrcode*
 
-┣━━⊱  *FUN MENU*  ⊰━━━┫
+┏━━⊱  *FUN MENU*  
 ┣⊱ *${prefix}mining*
 ┣⊱ *${prefix}bisakah*
 ┣⊱ *${prefix}kapankah*
@@ -153,41 +153,41 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}happymod*
 ┣⊱ *${prefix}nangis*
 ┣⊱ *${prefix}cium*
-┣⊱ *${prefix}peluk*
+┗⊱ *${prefix}peluk*
 
-┣━━⊱ *MUTUAL* ⊰━━━━━┫
+┏━━⊱ *MUTUAL* 
 ┣⊱ *${prefix}mutual*
-┣⊱ *${prefix}next*
+┗⊱ *${prefix}next*
 
-┣━━⊱ *MEDIA MENU* ⊰━━┫
+┏━━⊱ *MEDIA MENU* 
 ┣⊱ *${prefix}quotes*
 ┣⊱ *${prefix}beritahoax*
 ┣⊱ *${prefix}brainly*
 ┣⊱ *${prefix}pinterest*
 ┣⊱ *${prefix}resepmasakan*
 ┣⊱ *${prefix}igstalk*
-┣⊱ *${prefix}bitly*
+┗⊱ *${prefix}bitly*
 
-┣━━⊱ *YT & SONG* ⊰━━━┫
+┏━━⊱ *YT & SONG*
 ┣⊱ *${prefix}ytmp3*
 ┣⊱ *${prefix}ytmp4*
-┣⊱ *${prefix}joox*
+┗⊱ *${prefix}joox*
 
-┣━━⊱  *NSFW MENU*  ⊰━┫
+┏━━⊱  *NSFW MENU* 
 ┣⊱ *${prefix}pokemon*
 ┣⊱ *${prefix}anjing*
 ┣⊱ *${prefix}blowjob*
 ┣⊱ *${prefix}nekonime*
 ┣⊱ *${prefix}husbu*
-┣⊱ *${prefix}ranime*
+┗⊱ *${prefix}ranime*
 
-┣━━⊱ *LIMIT & UANG* ⊰━┫
+┏━━⊱ *LIMIT & WALLET*
 ┣⊱ *${prefix}limit*
 ┣⊱ *${prefix}buylimit*
 ┣⊱ *${prefix}transfer*
-┣⊱ *${prefix}dompet*
+┗⊱ *${prefix}dompet*
 
-┣━━⊱ *GROUP MENU* ⊰━┫
+┏━━⊱ *GROUP MENU* 
 ┣⊱ *${prefix}hidetag*
 ┣⊱ *${prefix}grouplist*
 ┣⊱ *${prefix}level*
@@ -205,9 +205,9 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ┣⊱ *${prefix}leveling* [enable/disable]
 ┣⊱ *${prefix}nsfw* [1/0]
 ┣⊱ *${prefix}simih* [1/0]
-┣⊱ *${prefix}welcome* [1/0]
+┗⊱ *${prefix}welcome* [1/0]
 
-┣━━⊱ *OWNER MENU* ⊰━┫
+┏━━⊱ *OWNER MENU*
 ┣⊱ *${prefix}bc*
 ┣⊱ *${prefix}bcgc*
 ┣⊱ *${prefix}kickall*
@@ -252,5 +252,5 @@ exports.satukos = () => {
 }
 
 exports.uangkau = (pushname, sender, uangkau) => {
-	return`*┏⊱ 「 ATM 」⊰━┓*\n┣⊱ *Nama* : ${pushname}\n┣⊱ *Nomor* : ${sender.split("@")[0]}\n┣⊱ *Uang* : ${uangkau}\n┗━━━━━━━━━━`
+	return`*┏⊱ 「 ATM 」*\n*Nama* : ${pushname}\n*Nomor* : ${sender.split("@")[0]}\n*Uang* : ${uangkau}`
 }
